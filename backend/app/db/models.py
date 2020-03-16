@@ -4,7 +4,7 @@
 
 from datetime import datetime
 
-from db import db
+from db.flask_session import db
 
 
 class Post(db.Model):

@@ -1,16 +1,13 @@
+# Import Installed Packages
 import logging
 import traceback
-
 from flask_restplus import Api
-import config
+
+# Import app code
+import core.config
 from sqlalchemy.orm.exc import NoResultFound
 
 log = logging.getLogger(__name__)
-
-api = Api(version='1.0', title='Eye Safety Calculator API',
-          description='An API for creating a laser system',
-          )
-
 
 @api.errorhandler
 def default_error_handler(e):

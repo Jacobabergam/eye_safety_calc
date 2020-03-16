@@ -1,5 +1,5 @@
 from flask_restplus import fields
-from api.restplus import api
+from api.api_v1.api import api
 
 blog_post = api.model('Blog post', {
     'id': fields.Integer(readOnly=True, description='The unique identifier of a blog post'),
