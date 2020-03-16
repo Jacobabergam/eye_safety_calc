@@ -35,11 +35,9 @@ def initialize_app(flask_app):
     configure_app(flask_app)
 
     blueprint = Blueprint('api', __name__, url_prefix='/api')
-    print(api)
     api_instance.init_app(blueprint)
     api_instance.add_namespace(blog_posts_namespace)
     flask_app.register_blueprint(blueprint)
-
     db.init_app(flask_app)
 
 

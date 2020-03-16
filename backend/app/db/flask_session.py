@@ -9,6 +9,6 @@ db = SQLAlchemy()
 db_session = db.session
 
 def reset_database():
-    from db.models import Post, Category  # noqa
+    from models.blog import Post, Category  # noqa
     db.drop_all()
     db.create_all()
