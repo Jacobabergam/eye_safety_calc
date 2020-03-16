@@ -8,13 +8,13 @@ Repo for the eye safety calculator web app service. Repo contains backend and fr
 
 python environemnt is located on localhost as bergamWebApp
 
-### workon bergamWebApp
+### `workon bergamWebApp`
 
 Custom Flask running SQLAlchemy
 
 To Run:
 
-### python app.py
+### `python app.py`
 
 ---
 
@@ -22,7 +22,7 @@ To Run:
 
 to run cd into frontend directory and run:
 
-### npm start
+### `npm start`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
