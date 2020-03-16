@@ -7,10 +7,10 @@ from flask import Flask, Blueprint
 
 import config
 
-from api.blog.endpoints.posts import ns as blog_posts_namespace
-from api.blog.endpoints.categories import ns as blog_categories_namespace
+from api.api_v1.endpoints.posts import ns as blog_posts_namespace
+from api.api_v1.endpoints.categories import ns as blog_categories_namespace
 from api.restplus import api
-from database import db
+from db import db
 import config
 
 app = Flask(__name__)

@@ -1,4 +1,10 @@
 from flask_sqlalchemy import SQLAlchemy
+import app
+from db.base import Base
+
+db = SQLAlchemy(app, model_class=Base)
+db_session = db.session
+
 
 db = SQLAlchemy()
 

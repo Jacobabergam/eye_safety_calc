@@ -1,5 +1,5 @@
-from database import db
-from database.models import Post, Category
+from db.flask_session import db
+from db.models import Post, Category
 
 
 def create_blog_post(data):
