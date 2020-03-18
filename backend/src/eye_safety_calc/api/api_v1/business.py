@@ -3,9 +3,9 @@ from models.blog import Post, Category
 
 
 def create_blog_post(data):
-    title = data.get('title')
-    body = data.get('body')
-    category_id = data.get('category_id')
+    title = data.get("title")
+    body = data.get("body")
+    category_id = data.get("category_id")
     category = Category.query.filter(Category.id == category_id).one()
     post = Post(title, body, category)
     db.session.add(post)
@@ -14,9 +14,9 @@ def create_blog_post(data):
 
 def update_post(post_id, data):
     post = Post.query.filter(Post.id == post_id).one()
-    post.title = data.get('title')
-    post.body = data.get('body')
-    category_id = data.get('category_id')
+    post.title = data.get("title")
+    post.body = data.get("body")
+    category_id = data.get("category_id")
     post.category = Category.query.filter(Category.id == category_id).one()
     db.session.add(post)
     db.session.commit()
@@ -29,8 +29,8 @@ def delete_post(post_id):
 
 
 def create_category(data):
-    name = data.get('name')
-    category_id = data.get('id')
+    name = data.get("name")
+    category_id = data.get("id")
 
     category = Category(name)
     if category_id:
@@ -42,7 +42,7 @@ def create_category(data):
 
 def update_category(category_id, data):
     category = Category.query.filter(Category.id == category_id).one()
-    category.name = data.get('name')
+    category.name = data.get("name")
     db.session.add(category)
     db.session.commit()
 

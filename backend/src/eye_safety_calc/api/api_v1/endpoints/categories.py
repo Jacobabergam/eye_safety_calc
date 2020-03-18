@@ -9,13 +9,13 @@ from models.blog import Category
 
 log = logging.getLogger(__name__)
 
-ns = api.namespace('blog/categories',
-                   description='Operations related to blog categories')
+ns = api.namespace(
+    "blog/categories", description="Operations related to blog categories"
+)
 
 
-@ns.route('/')
+@ns.route("/")
 class CategoryCollection(Resource):
-
     @api.marshal_list_with(category)
     def get(self):
         """
@@ -24,7 +24,7 @@ class CategoryCollection(Resource):
         categories = Category.query.all()
         return categories
 
-    @api.response(201, 'Category successfully created.')
+    @api.response(201, "Category successfully created.")
     @api.expect(category)
     def post(self):
         """
@@ -35,10 +35,9 @@ class CategoryCollection(Resource):
         return None, 201
 
 
-@ns.route('/<int:id>')
-@api.response(404, 'Category not found.')
+@ns.route("/<int:id>")
+@api.response(404, "Category not found.")
 class CategoryItem(Resource):
-
     @api.marshal_with(category_with_posts)
     def get(self, id):
         """
@@ -47,7 +46,7 @@ class CategoryItem(Resource):
         return Category.query.filter(Category.id == id).one()
 
     @api.expect(category)
-    @api.response(204, 'Category successfully updated.')
+    @api.response(204, "Category successfully updated.")
     def put(self, id):
         """
         Updates a blog category.
@@ -68,7 +67,7 @@ class CategoryItem(Resource):
         update_category(id, data)
         return None, 204
 
-    @api.response(204, 'Category successfully deleted.')
+    @api.response(204, "Category successfully deleted.")
     def delete(self, id):
         """
         Deletes blog category.

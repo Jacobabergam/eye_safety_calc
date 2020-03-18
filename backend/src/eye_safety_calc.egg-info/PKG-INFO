@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: eye-safety-calc
+Version: 0.1
+Summary: Eye_Safety_Calc backend API setup to calculate safetyfor a laser system according to ANSI/IEC Standards
+Home-page: https://github.com/Jacobabergam/Eye_Safety_Calc
+Author: Jacob Bergam
+Author-email: Jabergam@gmail.com
+Maintainer: Jacob Bergam
+Maintainer-email: Jabergam@gmail.com
+License: MIT
+Project-URL: Documentation, None
+Project-URL: Bug Tracker, https://github.com/Jacobabergam/Eye_Safety_Calc/issues
+Project-URL: Source Code, https://github.com/Jacobabergam/Eye_Safety_Calc
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
