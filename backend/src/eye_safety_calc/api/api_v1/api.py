@@ -1,6 +1,6 @@
 # Import Installed Packages
 from flask import Flask
-from flask_restplus import Api
+from flask_restx import Api
 
 # Import app code
 from main import app

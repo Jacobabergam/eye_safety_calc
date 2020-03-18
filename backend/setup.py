@@ -27,6 +27,7 @@ INSTALL_REQUIRES = [
     "python-dotenv",
     "requests",
     "urllib3",
+    "APISpec",
     "marshmallow==2.18.0",
     "werkzeug==0.16.1",
 ]

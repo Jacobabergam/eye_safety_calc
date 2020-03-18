@@ -1,4 +1,4 @@
-from flask_restplus import fields
+from flask_restx import fields
 from api.api_v1.api import api
 
 blog_post = api.model(

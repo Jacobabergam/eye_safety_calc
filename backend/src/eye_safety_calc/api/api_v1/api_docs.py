@@ -4,25 +4,25 @@ from flask_apispec import FlaskApiSpec
 
 # Import app code
 from main import app
-import config
+from eye_safety_calc.config import Config
 
 security_definitions = {
     "bearer": {
         "type": "oauth2",
         "flow": "password",
-        "tokenUrl": f"{config.API_V1_STR}/login/access-token",
+        "tokenUrl": f"{Config.API_V1_STR}/login/access-token",
     }
 }
 
 app.config.update(
     {
         "APISPEC_SPEC": APISpec(
-            title=config.PROJECT_NAME,
+            title=Config.PROJECT_NAME,
             version="v1",
             plugins=("apispec.ext.marshmallow",),
             securityDefinitions=security_definitions,
         ),
-        "APISPEC_SWAGGER_URL": f"{config.API_V1_STR}/swagger/",
+        "APISPEC_SWAGGER_URL": f"{Config.API_V1_STR}/swagger/",
     }
 )
 docs = FlaskApiSpec(app)

@@ -1,0 +1,12 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+eye-safety-calc = {editable = true,extras = ["dev"],path = "."}
+
+[requires]
+python_version = "3.7"

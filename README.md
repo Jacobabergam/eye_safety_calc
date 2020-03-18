@@ -6,9 +6,9 @@ Repo for the eye safety calculator web app service. Repo contains backend and fr
 
 # Backend
 
-python environemnt is located on localhost as bergamWebApp
+python environemnt is located in backend folder. navigate to backend/ and use the following command to actiave env
 
-### `workon bergamWebApp`
+### `source venv/bin/activate`
 
 Custom Flask running SQLAlchemy
 

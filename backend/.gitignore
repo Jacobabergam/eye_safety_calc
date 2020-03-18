@@ -2,3 +2,6 @@ __pycache__
 .mypy_cache
 *.pyc
 .env
+
+# Ignore venv packages, should only keep version control of piplock
+venv/

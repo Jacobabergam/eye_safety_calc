@@ -1,7 +1,7 @@
 import logging
 
 from flask import request
-from flask_restplus import Resource
+from flask_restx import Resource
 from api.api_v1.business import create_category, delete_category, update_category
 from api.api_v1.serializers import category, category_with_posts
 from api.api_v1.api import api
