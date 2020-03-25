@@ -1,4 +1,4 @@
-# Eye_Safety_Calc
+# eye_safety_calc
 
 Repo for the eye safety calculator web app service. Repo contains backend and frontend.
 
