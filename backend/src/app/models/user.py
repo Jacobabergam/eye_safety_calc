@@ -6,8 +6,8 @@ from sqlalchemy import Column, Integer, DateTime, String, Boolean, ForeignKey
 from sqlalchemy.orm import relationship
 
 # Import app code
-from db.base_class import Base
-from models.base_relations import user_roles
+from app.db.base_class import Base
+from app.models.base_relations import users_roles
 
 # Typings, for autocompletion (VS Code with Python plug-in)
 from typing import List  # noqa
@@ -25,8 +25,5 @@ class User(Base):
     is_superuser = Column(Boolean(), default=False)
     # Relationships
     roles = relationship(
-        "Role", secondary=user_roles, back_populates="users"
+        "Role", secondary=users_roles, back_populates="users"
     )  # type: List[role.Role]
-
-    def __repr__(self):
-        return "<User {}>".format(self.email)

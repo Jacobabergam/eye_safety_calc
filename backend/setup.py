@@ -12,8 +12,8 @@ AUTHOR = "Jacob Bergam"
 AUTHOR_EMAIL = "Jabergam@gmail.com"
 PROJECT_URLS = {
     "Documentation": "None",
-    "Bug Tracker": "https://github.com/Jacobabergam/Eye_Safety_Calc/issues",
-    "Source Code": "https://github.com/Jacobabergam/Eye_Safety_Calc",
+    "Bug Tracker": "https://github.com/Jacobabergam/eye_safety_calc/issues",
+    "Source Code": "https://github.com/Jacobabergam/eye_safety_calc",
 }
 INSTALL_REQUIRES = [
     "Flask",
@@ -22,12 +22,14 @@ INSTALL_REQUIRES = [
     "Flask-Migrate",
     "flask-restx",
     "Flask-SQLAlchemy",
-    "PyJWT",
+    "flask-jwt-extended",
     "python-dateutil",
     "python-dotenv",
     "requests",
     "urllib3",
     "APISpec",
+    "flask_apispec",
+    "passlib",
     "marshmallow==2.18.0",
     "werkzeug==0.16.1",
 ]
@@ -58,7 +60,7 @@ setup(
     maintainer=AUTHOR,
     maintainer_email=AUTHOR_EMAIL,
     license="MIT",
-    url="https://github.com/Jacobabergam/Eye_Safety_Calc",
+    url="https://github.com/Jacobabergam/eye_safety_calc",
     project_urls=PROJECT_URLS,
     packages=find_packages(where="src"),
     package_dir={"": "src"},

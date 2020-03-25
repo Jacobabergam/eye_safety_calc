@@ -4,12 +4,14 @@ Flask-Cors
 Flask-Migrate
 flask-restx
 Flask-SQLAlchemy
-PyJWT
+flask-jwt-extended
 python-dateutil
 python-dotenv
 requests
 urllib3
 APISpec
+flask_apispec
+passlib
 marshmallow==2.18.0
 werkzeug==0.16.1
 

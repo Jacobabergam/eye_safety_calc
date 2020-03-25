@@ -5,3 +5,4 @@ __pycache__
 
 # Ignore venv packages, should only keep version control of piplock
 venv/
+.tox/
