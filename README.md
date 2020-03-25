@@ -14,7 +14,7 @@ Custom Flask running SQLAlchemy
 
 To Run:
 
-### `python app.py`
+### `flask run --port 8888'
 
 ---
 
