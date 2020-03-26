@@ -27,6 +27,6 @@ def init_db(db_session):
     user = get_user_by_username("admin@Bergam.tech", db_session)
     if not user:
         user = create_user(
-            db_session, "admin@Bergam.tech", "Jac0b0114", is_superuser=True,
+            db_session, "admin@Bergam.tech", "TestPassword", is_superuser=True,
         )
         assign_role_to_user(role, user, db_session)
