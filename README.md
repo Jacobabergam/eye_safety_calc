@@ -16,6 +16,14 @@ To Run:
 
 ### `flask run --port 8888'
 
+
+Note to install new packages, please install with pipenv and add to Install_requires in setup.py
+
+Navigate to backend and please run 
+
+### 'pipenv install -e ".[dev]" '
+
+
 ---
 
 # Frontend
