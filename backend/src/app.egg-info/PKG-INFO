@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: app
+Version: 0.1
+Summary: Eye_Safety_Calc backend API setup to calculate safetyfor a laser system according to ANSI/IEC Standards
+Home-page: https://github.com/Jacobabergam/eye_safety_calc
+Author: Jacob Bergam
+Author-email: Jabergam@gmail.com
+Maintainer: Jacob Bergam
+Maintainer-email: Jabergam@gmail.com
+License: MIT
+Project-URL: Documentation, None
+Project-URL: Bug Tracker, https://github.com/Jacobabergam/eye_safety_calc/issues
+Project-URL: Source Code, https://github.com/Jacobabergam/eye_safety_calc
+Description: # eye_safety_calc Backend
+        
+        
+        python environemnt is located in backend folder. navigate to backend/ and use the following command to actiave env
+        
+        ### `source venv/bin/activate`
+        
+        Custom Flask running SQLAlchemy
+        
+        To Run:
+        
+        ### `flask run --port 8888'
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev

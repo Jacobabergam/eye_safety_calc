@@ -9,6 +9,7 @@ from .base import BaseSchema
 
 class RoleSchema(BaseSchema):
     # Own properties
+    __tablename__ = "role"
     id = fields.Int()
     created_at = fields.DateTime()
     name = fields.Str()

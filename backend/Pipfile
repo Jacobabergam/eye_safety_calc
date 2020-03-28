@@ -7,6 +7,10 @@ verify_ssl = true
 
 [packages]
 eye-safety-calc = {editable = true,extras = ["dev"],path = "."}
+app = {editable = true,extras = ["dev"],path = "."}
+update = "*"
+marshmallow = "*"
+alembic = "*"
 
 [requires]
 python_version = "3.7"

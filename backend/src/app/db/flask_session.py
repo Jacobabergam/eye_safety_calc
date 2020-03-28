@@ -10,6 +10,7 @@ TEST_SQLALCHEMY_DATABASE_URI = "sqlite:///test.sqlite"
 # app.config["SQLALCHEMY_DATABASE_URI"] = config.SQLALCHEMY_DATABASE_URI
 app.config["SQLALCHEMY_DATABASE_URI"] = TEST_SQLALCHEMY_DATABASE_URI
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+
 db = SQLAlchemy(app, model_class=Base)
-db.create_all()
+# db.create_all()
 db_session = db.session

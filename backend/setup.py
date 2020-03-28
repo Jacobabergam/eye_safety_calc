@@ -27,15 +27,14 @@ INSTALL_REQUIRES = [
     "python-dotenv",
     "requests",
     "urllib3",
-    "APISpec",
-    "flask_apispec",
     "passlib",
-    "marshmallow==2.18.0",
+    "marshmallow",
     "werkzeug==0.16.1",
+    "webargs",
 ]
 EXTRAS_REQUIRE = {
     "dev": [
-        "black",
+        "black==18.9b0",
         "flake8",
         "pre-commit",
         "pydocstyle",
@@ -50,7 +49,7 @@ EXTRAS_REQUIRE = {
 }
 
 setup(
-    name="eye_safety_calc",
+    name="app",
     description=DESCRIPTION,
     long_description=README,
     long_description_content_type="text/markdown",

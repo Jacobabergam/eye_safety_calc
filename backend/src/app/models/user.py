@@ -4,6 +4,7 @@ from datetime import datetime
 # Import installed packages
 from sqlalchemy import Column, Integer, DateTime, String, Boolean, ForeignKey
 from sqlalchemy.orm import relationship
+from flask_restx import fields
 
 # Import app code
 from app.db.base_class import Base
@@ -14,6 +15,7 @@ from typing import List  # noqa
 
 
 class User(Base):
+    __tablename__ = "user"
     # Own properties
     id = Column(Integer, primary_key=True, index=True)
     created_at = Column(DateTime, default=datetime.utcnow(), index=True)
